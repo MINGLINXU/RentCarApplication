@@ -33,6 +33,7 @@ public class LoginActivity  extends AppCompatActivity implements View.OnClickLis
         etUserName = (EditText) findViewById(R.id.editViewUsername);
         etPassword = (EditText) findViewById(R.id.editViewPassword);
         tvHelp = (TextView) findViewById(R.id.textViewHelp);
+        tvHelp.setOnClickListener(this);
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(this);
         btnRegister = (Button) findViewById(R.id.btnRegister);
@@ -53,8 +54,11 @@ public class LoginActivity  extends AppCompatActivity implements View.OnClickLis
                 startActivity(intentToReg);
                 finish();
                 break;
-
-
+            case R.id.textViewHelp:  //Help Button
+                Intent intentToHelp = new Intent(this,HelpActivity.class);
+                startActivity(intentToHelp);
+                finish();
+                break;
         }
     }
 
