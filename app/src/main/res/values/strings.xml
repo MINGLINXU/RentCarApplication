@@ -14,4 +14,8 @@
     <string name="mobilenumber">Mobile Number</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="username">PhoneNumber/ Email Address</string>
+    <string name="User_name_cannot_be_empty">Please enter your username!</string>
+    <string name="Password_cannot_be_empty">Please enter your password!</string>
+    <string name="button_logout">LogOut</string>
 </resources>

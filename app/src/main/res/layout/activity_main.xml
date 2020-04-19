@@ -20,14 +20,16 @@
         android:id="@+id/editViewUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="UserName"
+        android:hint="@string/username"
+        android:inputType="text|phone"
         android:paddingBottom="20dp" />
 
     <EditText
         android:id="@+id/editViewPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="@string/password"
+        android:inputType="text|textPassword"
         android:paddingBottom="20dp" />
 
     <Button
@@ -35,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FF009688"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#FFFFFF" />
 
     <Button
@@ -44,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#FF009688"
-        android:text="Register"
+        android:text="@string/register"
         android:textColor="#FFFFFF" />
 
     <TextView

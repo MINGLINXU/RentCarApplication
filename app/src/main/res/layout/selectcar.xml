@@ -4,17 +4,31 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/TextViewShowCar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Choose Your Car"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextViewShowCar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="Choose Your Car"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/button_logout" />
+        </LinearLayout>
 
         <ListView
             android:id="@+id/ListViewSelectCar"

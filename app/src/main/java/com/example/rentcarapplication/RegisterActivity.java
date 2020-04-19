@@ -7,7 +7,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -104,6 +103,9 @@ public class RegisterActivity  extends AppCompatActivity implements View.OnClick
                     Toast.makeText(RegisterActivity.this, "Register Successful!", Toast.LENGTH_SHORT).show();
                 }
             }).start();
+            Intent intent = new Intent(this,LoginActivity.class);
+            startActivity(intent);
+            finish();
 
         }
     }
