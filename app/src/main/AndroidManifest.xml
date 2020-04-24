@@ -13,7 +13,7 @@
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".CarCatActivity"></activity>
         <activity android:name=".HelpActivity"></activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".RentalDetails">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

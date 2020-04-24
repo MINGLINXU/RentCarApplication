@@ -4,10 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <CalendarView
-        android:id="@+id/calendarView"
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Button" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +20,14 @@
             android:id="@+id/textViewPickUpDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/PickUpDate" />
+            android:text="@string/PickUpDate"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/selectPickUpDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date" />
 
     </LinearLayout>
     <LinearLayout
@@ -26,11 +35,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+
         <TextView
             android:id="@+id/textViewReturnDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/returnDate" />
+            android:text="@string/returnDate"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/selectReturnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date" />
 
     </LinearLayout>
     <LinearLayout
@@ -42,12 +59,15 @@
             android:id="@+id/textViewPickUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pickuplocation" />
+            android:layout_marginTop="20dp"
+            android:text="@string/pickuplocation"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinnerPickUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
@@ -59,18 +79,23 @@
             android:id="@+id/textViewReturn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/returnlocation" />
+            android:layout_marginTop="20dp"
+            android:text="@string/returnlocation"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinnerReturn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_weight="1" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_detailNext"
+        android:id="@+id/btn_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg_radius_sign_btn"
+        android:layout_marginTop="20dp"
         android:text="@string/next" />
 </LinearLayout>

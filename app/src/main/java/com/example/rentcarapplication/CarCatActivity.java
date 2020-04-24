@@ -40,6 +40,5 @@ public class CarCatActivity extends AppCompatActivity {
         caCar = new CustomerAdapter(this,R.layout.carcategory, alCarList);
         lvCar.setAdapter(caCar);
 
-
     }
 }
